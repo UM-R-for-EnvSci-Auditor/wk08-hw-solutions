@@ -1,0 +1,84 @@
+monitoring_location_id,monitoring_location_name,monitoring_location_latitude,monitoring_location_longitude,monitoring_location_horizontal_coordinate_reference_system,monitoring_location_waterbody,basin
+PR-1,Unknown PR-1,50.50924,-96.87344,WGS84,Lake Winnipeg,South basin
+PR-2,Unknown PR-2,50.52225,-96.71147,WGS84,Lake Winnipeg,South basin
+PR-4,Unknown PR-4,50.73043,-96.64727,WGS84,Lake Winnipeg,South basin
+PR-5,Unknown PR-5,50.74778,-96.43483,WGS84,Lake Winnipeg,South basin
+PR-7,Unknown PR-7,50.92126,-96.64384,WGS84,Lake Winnipeg,South basin
+PR-3,Unknown PR-3,50.72175,-96.88712,WGS84,Lake Winnipeg,South basin
+1,South Basin 1,50.38758333,-96.81013889,WGS84,Lake Winnipeg,South basin
+2,South Basin 2,50.43230556,-96.83327778,WGS84,Lake Winnipeg,South basin
+3B,South Basin 3B,50.44263889,-96.70791667,WGS84,Lake Winnipeg,South basin
+59,South Basin 59,50.69716667,-96.7895,WGS84,Lake Winnipeg,South basin
+5,South Basin 5,50.67905556,-96.63627778,WGS84,Lake Winnipeg,South basin
+60C,South Basin 60C,50.55713889,-96.66577778,WGS84,Lake Winnipeg,South basin
+57B,South Basin 57B,50.90380556,-96.96213889,WGS84,Lake Winnipeg,South basin
+60B,South Basin 60B,50.63441667,-96.94947222,WGS84,Lake Winnipeg,South basin
+57,South Basin 57,50.86705556,-96.80511111,WGS84,Lake Winnipeg,South basin
+11,South Basin 11,50.95830556,-96.68366667,WGS84,Lake Winnipeg,South basin
+10A,South Basin 10A,51.00827778,-96.50238889,WGS84,Lake Winnipeg,South basin
+12B,South Basin 12B,51.13411111,-96.62194444,WGS84,Lake Winnipeg,South basin
+13B,Narrows 13B,51.33780556,-96.57891667,WGS84,Lake Winnipeg,South basin
+14,Narrows 14,51.442,-96.63358333,WGS84,Lake Winnipeg,South basin
+56,Narrows 56,51.60869444,-96.71652778,WGS84,Lake Winnipeg,South basin
+15,Narrows 15,51.73366667,-96.82030556,WGS84,Lake Winnipeg,South basin
+55,North Basin 55,51.86233333,-96.93708333,WGS84,Lake Winnipeg,North basin
+54,North Basin 54,52,-97.04069444,WGS84,Lake Winnipeg,North basin
+53,North Basin 53,52.12105556,-97.12816667,WGS84,Lake Winnipeg,North basin
+69,North Basin 69,52.00763889,-97.17833333,WGS84,Lake Winnipeg,North basin
+68,North Basin 68,52.10383333,-97.41572222,WGS84,Lake Winnipeg,North basin
+64,North Basin 64,52.24113889,-97.62811111,WGS84,Lake Winnipeg,North basin
+50S,North Basin 50S,52.4835,-97.43736111,WGS84,Lake Winnipeg,North basin
+48,North Basin 48,52.64558333,-97.84102778,WGS84,Lake Winnipeg,North basin
+43S,North Basin 43S,52.65563889,-98.69344444,WGS84,Lake Winnipeg,North basin
+45,North Basin 45,52.63772222,-98.32475,WGS84,Lake Winnipeg,North basin
+42S,North Basin 42S,52.82461111,-98.06677778,WGS84,Lake Winnipeg,North basin
+41,North Basin 41,52.82916667,-98.45416667,WGS84,Lake Winnipeg,North basin
+19,North Basin 19,53.02441667,-97.69922222,WGS84,Lake Winnipeg,North basin
+39,North Basin 39,53.07494444,-98.19952778,WGS84,Lake Winnipeg,North basin
+20,North Basin 20,53.20025,-97.63252778,WGS84,Lake Winnipeg,North basin
+17,North Basin 17,52.88277778,-97.61222222,WGS84,Lake Winnipeg,North basin
+62,South Basin 62,50.50947,-96.9425,WGS84,Lake Winnipeg,South basin
+61,South Basin 61,50.52467,-96.80404,WGS84,Lake Winnipeg,South basin
+60,South Basin 60,50.6136,-96.79186,WGS84,Lake Winnipeg,South basin
+37S,South Basin 37S,50.79159,-96.76231,WGS84,Lake Winnipeg,South basin
+6,South Basin 6,50.75821,-96.59155,WGS84,Lake Winnipeg,South basin
+8,South Basin 8,50.74504,-96.47544,WGS84,Lake Winnipeg,South basin
+7,South Basin 7,50.64929,-96.37999,WGS84,Lake Winnipeg,South basin
+9,South Basin 9,50.87873,-96.42493,WGS84,Lake Winnipeg,South basin
+10S,Narrows 10S,50.87566,-96.58373,WGS84,Lake Winnipeg,South basin
+16S,Narrows 16S,52.2665,-97.192,WGS84,Lake Winnipeg,North basin
+18,North Basin 18,52.6841,-97.5008,WGS84,Lake Winnipeg,North basin
+20S,North Basin 20S,53.22506,-97.93446,WGS84,Lake Winnipeg,North basin
+21,North Basin 21,53.41321,-97.90901,WGS84,Lake Winnipeg,North basin
+22,North Basin 22,53.61732,-97.96709,WGS84,Lake Winnipeg,North basin
+23B,North Basin 23B,53.51551,-98.26712,WGS84,Lake Winnipeg,North basin
+27S,North Basin 27S,53.40829,-99.07661,WGS84,Lake Winnipeg,North basin
+26S,North Basin 26S,53.41183,-98.76691,WGS84,Lake Winnipeg,North basin
+25S,North Basin 25S,53.20749,-98.90893,WGS84,Lake Winnipeg,North basin
+W8,15 W8,51.74614,-96.82117,WGS84,Lake Winnipeg,North basin
+W5,18 W5,52.79625,-97.5631,WGS84,Lake Winnipeg,North basin
+W6,48 W6,52.6432,-97.7347,WGS84,Lake Winnipeg,North basin
+35S,North Basin 35S,53.32491,-98.24181,WGS84,Lake Winnipeg,North basin
+W1,23E W1,53.3747,-98.38725,WGS84,Lake Winnipeg,North basin
+23ES,North Basin 23ES,53.32497,-98.24174,WGS84,Lake Winnipeg,North basin
+23S,North Basin 23S,53.2041,-98.61665,WGS84,Lake Winnipeg,North basin
+28,North Basin 28,53.21202,-99.35531,WGS84,Lake Winnipeg,North basin
+34S,North Basin 34S,53.6627,-98.48376,WGS84,Lake Winnipeg,North basin
+33,North Basin 33,53.83482,-98.49832,WGS84,Lake Winnipeg,North basin
+44S,Narrows 44S,51.21709,-96.7253,WGS84,Lake Winnipeg,South basin
+31,North Basin 31,53.60036111,-98.92341667,WGS84,Lake Winnipeg,North basin
+49S,Narrows 49S,51.25583333,-96.52358333,WGS84,Lake Winnipeg,South basin
+PR 9A,Unknown PR 9A,51.94868,-97.00388,WGS84,Lake Winnipeg,North basin
+PR 11A,Unknown PR 11A,52.26256,-97.70634,WGS84,Lake Winnipeg,North basin
+PR 19,Unknown PR 19,52.52212,-98.18547,WGS84,Lake Winnipeg,North basin
+PR 13,Unknown PR 13,52.82977,-98.34061,WGS84,Lake Winnipeg,North basin
+PR 15,Unknown PR 15,53.32853,-98.75297,WGS84,Lake Winnipeg,North basin
+PR 17,Unknown PR 17,53.1857,-98.14982,WGS84,Lake Winnipeg,North basin
+PR 18A,Unknown PR 18A,52.71106,-97.54841,WGS84,Lake Winnipeg,North basin
+46S,South Basin 46S,51.13472222,-96.421,WGS84,Lake Winnipeg,South basin
+36S,South Basin 36S,50.73211111,-96.929,WGS84,Lake Winnipeg,South basin
+58S,South Basin 58S,50.82941667,-96.9435,WGS84,Lake Winnipeg,South basin
+47S,South Basin 47S,51.21622222,-96.32069444,WGS84,Lake Winnipeg,South basin
+57S,South Basin 57S,50.86667,-96.80455,WGS84,Lake Winnipeg,South basin
+57BS,South Basin 57BS,50.90459,-96.96276,WGS84,Lake Winnipeg,South basin
+3,South Basin 3,50.45855,-96.68864,WGS84,Lake Winnipeg,South basin

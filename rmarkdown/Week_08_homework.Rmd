@@ -1,0 +1,128 @@
+---
+title: "Week 8 Homework Assignment"
+author: "Jose Luis Rodriguez Gil"
+date: "06/11/2020"
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages, include=FALSE}
+
+library(tidyverse)
+library(janitor)
+library(here)
+
+library(viridis)
+
+```
+
+
+```{r source functions, include=FALSE}
+
+source(here("functions", "theme_pepe.R"))
+
+```
+
+# Data loading
+
+First we start by loading up all the data
+
+```{r}
+
+low_sites <- read_csv(here("data", "sites.csv"))
+low_sample_log <- read_csv(here("data", "sample_log.csv"))
+low_results_2002 <- read_csv(here("data", "results_2002.csv"))
+low_results_2004 <- read_csv(here("data", "results_2004.csv"))
+
+```
+
+# Data binding and joining
+
+With all the data loaded, we are going to start binding and joining the different oieces to get to our main, combined,dataset
+
+Let's start by binding the two years of results data into one:
+
+```{r bind results}
+
+low_results <- bind_rows(low_results_2002, low_results_2004)
+
+print(low_results)
+
+```
+
+Now that we have our complete hree pieces (sites, sample_log, and results), we want to join thse toguether. For that we will use the `left_join()` function starting by joining the sample log to the site info (using *monitoring_location_id* as our key column) followed by a left yoing with the results data (using *sample_id* as our key column)
+
+```{r join datasets}
+
+low_data <- low_sample_log %>% 
+  left_join(low_sites, by = "monitoring_location_id") %>% 
+  left_join(low_results, by = "sample_id")
+
+print(low_data)
+
+```
+# Data processing
+
+Now that we have one single, combine, dataset, we still need to do some processing. 
+
+- First we will use `pivot_longer()` to change the parameter columns into long form.
+- Second we will `mutat()` the year variable into a factor to ensure we can create our boxplots.
+
+```{r process data}
+
+low_data_long <- low_data %>% 
+  pivot_longer(cols = c(nitrate,nitrite,
+                        ammonia,
+                        total_nitrogen_mixed_forms,
+                        soluble_reactive_phosphorus_srp,
+                        total_phosphorus_mixed_forms),
+               names_to = "parameter",
+               values_to = "concentration") %>% 
+  mutate(year = factor(year, levels = c("2002", "2004"))) %>% 
+  mutate(parameter = str_to_title(parameter)) %>% 
+  mutate(parameter = case_when(
+    parameter == "Total_nitrogen_mixed_forms" ~ "Total N",
+    parameter == "Soluble_reactive_phosphorus_srp" ~ "SRP",
+    parameter == "Total_phosphorus_mixed_forms" ~ "Total P",
+    TRUE ~ parameter  # This line tells case_when() that any other case just gets whatever value parameter had already
+  ))
+
+print(low_data_long)
+
+```
+
+# Plots
+
+With all the data ready to go, we just need to plot
+
+```{r}
+
+low_data_long %>% 
+  ggplot() +
+  facet_grid(rows = vars(basin), cols = vars(parameter)) +
+  # facet_wrap(~ parameter, nrow = 1) +
+  geom_boxplot(aes(x = year, y = concentration, colour = year), fill = NA) +
+  scale_y_log10() +
+  scale_colour_brewer(palette = "Set1") +
+  theme_pepe() +
+  theme(legend.position = "none") +
+  labs(x = NULL,
+       y = expression(Concentration~(mu*g~.~L^{-1})),  # with expression() you can plot math. "~" means a space
+       title = "Lake winnipeg nutrients",
+       subtitle = "Water surface nutrient concentrations in the North and South basins for 2002 and 2004")
+
+```
+
+
+
+
+
+
+
+
+
